@@ -1,0 +1,372 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Стилі для верхнього блоку */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #2C4A67;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 4px solid red;
+    height: 18px;
+    z-index: 1000;
+}
+
+/* .menu {
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid greenyellow;
+} */
+
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.dropdown-menu > ul > li {
+    position: relative;
+    margin-right: 20px; /* Відстань між пунктами меню */
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Ефект при наведенні */
+}
+
+.submenu {
+    display: none; /* Сховати підменю за замовчуванням */
+    position: absolute;
+    top: 100%; /* Відстань до основного меню */
+    left: 0;
+    background-color: #2C4A67; /* Колір фону підменю */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu > ul > li:hover .submenu {
+    display: block; /* Показати підменю при наведенні на основний пункт */
+}
+
+.submenu li {
+    margin: 0; /* Збрати відстань до підменю */
+}
+
+.submenu a {
+    padding: 10px 15px; /* Відстань для пунктів підменю */
+    white-space: nowrap; /* Не дозволити переносити текст */
+}
+
+
+.search-bar {
+    flex-grow: 1;
+    position: absolute;
+    width: 290px;
+    height: 40px;
+    right: 255px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid greenyellow;
+    border-radius: 4px;
+}
+
+.logo {
+    width: 190px;
+    height: 50px;
+    border: 2px solid greenyellow;
+  }
+  
+.img {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+/* Стилі для текстового блоку і відео */
+.content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    border: 4px solid red;
+}
+
+.text-block {
+    flex: 1;
+    padding-left: 20px;
+    border: 2px solid greenyellow;
+}
+
+.text-align{
+    position: relative;
+    bottom: 14px;
+}
+
+.video-block {
+    flex: 1;
+    border: 2px solid greenyellow;
+    display: inline-block;
+}
+
+.video-block video {
+    width: 700px;
+    height: 100%;
+    padding-left: 115px;  
+}
+
+/* Стилі для секції з популярними і новими стравами */
+.dishes-section {
+    margin-top: 70px;
+    padding: 20px;
+    border: 4px solid red;
+}
+
+.dishes-section h2{
+    position: relative;
+    bottom: 35px;
+}
+
+.dishes-row {
+    display: flex;
+    justify-content: space-around;
+    border: 4px solid red;
+}
+
+.arrow-left{
+    position: relative;
+    top: 125px;
+    width: 32px;
+    height: 32px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    transform: rotate(305deg);
+    cursor: pointer;
+}
+
+.arrow-right{
+    position: relative;
+    top: 125px;
+    width: 32px;
+    height: 32px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    transform: rotate(135deg);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.dish {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 240px;
+    height: 305px;
+    border: 2px solid greenyellow;
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.dish-title {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.stars {
+    margin-top: 5px;
+    color: gold;
+}
+
+/* Стилі для блоку з текстом і фото */
+.text-photo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C4A67; /* Фон такого ж кольору, як у меню */
+    padding: 40px;
+    color: white;
+    height: 250px;
+    width: 91.5%;
+    margin: auto;
+    margin-top: 70px;
+    border: 3px solid red;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content h2 {
+    margin-bottom: 15px;
+}
+
+.photo-content {
+    flex: 1;
+    text-align: center;
+    
+}
+
+.photo-content img {
+    width: 220px;
+    max-width: 400px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* Медіа-запит для адаптивного дизайну */
+@media (max-width: 768px) {
+    .text-photo-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .photo-content img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.link{
+    color: lightblue;
+}
+
+/* Основные стили для футера */
+.footer-section {
+    background-color: #2C4A67;
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    border: 3px solid red;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Стили для блока "Про нас" */
+.about-us {
+    margin-bottom: 20px;
+    text-align: center;
+    border: 3px inset black;
+}
+
+.about-us h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.about-us p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Стили для нижней части футера */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+/* Контакты слева */
+.contacts {
+    width: 50%;
+}
+
+.contacts h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.contacts p {
+    margin-bottom: 5px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+/* Правовая информация справа */
+.legal-info {
+    width: 50%;
+    text-align: right;
+    font-size: 0.9em;
+    position: relative;
+    top: 85px;
+}
+
+.legal-info a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.legal-info a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contacts, .legal-info {
+        width: 100%;
+    }
+
+    .legal-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+

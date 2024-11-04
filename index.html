@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулінарний сайт</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Верхній блок з меню, пошуком та логотипом -->
+<div class="wrapper">     
+        <header class="header">
+            <div class="navbar">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li class="dropdown">
+                        <a href="#">Категорії <span class="arrow">&#9660;</span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="./Categories/Meat.html">М'ясо</a></li>
+                            <li><a href="./Categories/Fish.html">Риба</a></li>
+                            <li><a href="./Categories/Garnish.html">Гарніри</a></li>
+                            <li><a href="./Categories/Desserts.html">Десерти</a></li>
+                            <li><a href="./Categories/Soups.html">Супи</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Країни <span class="arrow">&#9660;</span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="./Countries/Ukraine.html">Україна</a></li>
+                            <li><a href="./Countries/France.html">Франція</a></li>
+                            <li><a href="./Countries/Italy.html">Італія</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Тип <span class="arrow">&#9660;</span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="./Types/Breakfast.html">Сніданки</a></li>
+                            <li><a href="./Types/Lunch.html">Обіди</a></li>
+                            <li><a href="./Types/Dinner.html">Вечері</a></li>
+                            <li><a href="./Types/Banquet.html">Бенкети</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            <div class="run-line"><marquee direction="left">Скоро нові рецепти! Стежте за оновленням!</marquee></div>
+            <div class="search-bar">
+                <input class="bar" type="text" placeholder="Пошук рецептів...">
+            </div>
+            <div class="logo">
+                <img class="img" src="./imagesandvideos/Logo.png" alt="image.png">
+            </div>
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+
+<!-- Основний контент: зліва текст, справа відео -->
+    <section class="content">
+        <div class="text-block">
+            <h3><b>Ласкаво просимо на наш кулінарний портал!</b></h3>
+            <p>Тут ви знайдете сотні перевірених і смачних рецептів для щоденного використання та особливих подій. 
+                Наша місія — допомогти вам готувати з легкістю, швидкістю та задоволенням, чи то сімейна вечеря, чи святковий стіл для гостей.</p> 
+                <p class="text-align">Ми впевнені, що кулінарія — це мистецтво, доступне кожному, і з нашими рецептами ви станете справжнім майстром на власній кухні!</p>
+          
+            <p><b>Що на вас чекає на нашому сайті:</b></p>
+            <ul>
+                <li><b>Рецепти на будь-який смак:</b> від класичних страв до сучасних інтерпретацій світової кухні.</li>
+                <li><b>Покрокові інструкції:</b> кожен рецепт супроводжується детальними описами та фотографіями.</li>
+                <li><b>Дієтичні та вегетаріанські страви:</b> різноманітні рецепти для тих, хто стежить за харчуванням або обирає особливий раціон.</li>
+                <li><b>Зручний пошук рецептів:</b> фільтри за інгредієнтами, часом приготування та складністю, щоб ви швидко знайшли потрібний рецепт.</li>        
+            </ul>
+          
+                Почніть свою кулінарну подорож вже сьогодні — здивуйте близьких смачними та оригінальними стравами, які точно припадуть усім до смаку!
+                Смачного!</p>
+        </div>
+        <div class="video-block">
+            <video autoplay muted loop src="./imagesandvideos/208754_small.mp4" title="Кулінарне відео"></video>
+        </div>
+    </section>
+
+    <!-- Блок з популярними стравами -->
+    <section class="dishes-section">
+        <h2>Популярні страви</h2>
+        <div class="dishes-row">
+            <div class="arrow-left"></div>
+            <div class="dish">
+                <img src="./imagesandvideos/dish1.jpg" alt="Страва 1">
+                <div class="dish-title">Страва 1</div>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="dish">
+                <img src="./imagesandvideos/dish2.jpg" alt="Страва 2">
+                <div class="dish-title">Страва 2</div>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="dish">
+                <img src="./imagesandvideos/dish3.jpg" alt="Страва 3">
+                <div class="dish-title">Страва 3</div>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="dish">
+                <img src="./imagesandvideos/dish4.jpg" alt="Страва 4">
+                <div class="dish-title">Страва 4</div>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="arrow-right"></div>
+        </div>
+    </section>
+
+<!-- Блок з нещодавно доданими стравами -->
+    <section class="dishes-section">
+        <h2>Нещодавно додані страви</h2>
+        <div class="dishes-row">
+            <div class="arrow-left"></div>
+            <div class="dish">
+                <img src="./imagesandvideos/recent1.jpg" alt="Страва 5">
+                <div class="dish-title">Страва 5</div>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="dish">
+                <img src="./imagesandvideos/recent2.jpg" alt="Страва 6">
+                <div class="dish-title">Страва 6</div>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="dish">
+                <img src="./imagesandvideos/recent3.jpg" alt="Страва 7">
+                <div class="dish-title">Страва 7</div>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <div class="dish">
+                <img src="./imagesandvideos/recent4.jpg" alt="Страва 8">
+                <div class="dish-title">Страва 8</div>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="arrow-right"></div>
+        </div>
+    </section>
+<!-- Новий блок з текстом і фото -->
+    <section class="text-photo-section">
+        <div class="text-content">
+            <h1>Поділіться своїми рецептами!</h1>
+            <p><h4>Поділіться своїми улюбленими рецептами з нашою спільнотою! 
+                Завантажуйте рецепти, додавайте фото, діліться секретами приготування та отримуйте відгуки від інших кулінарів. 
+                Разом ми зробимо цей світ смачнішим!</h4></p>
+            <p>Діліться тут:</p>
+            <p><a link="#" href="#" class="link">https://www.putandtasterecipes.com</a></p>
+        </div>
+        <div class="photo-content">
+            <img src="./imagesandvideos/Save recepies.png" alt="Фото кулінарії">
+        </div>
+    </section>
+
+    <!-- Prices -->
+    <section class="pricing-section">
+        <!-- Basic plan -->
+        <div class="pricing-card basic-plan">
+            <div class="top-block">
+                <h3>Basic</h3>
+                <img src="./imagesandvideos/Basic-price.png" alt="Basic Plan Logo">
+            </div>
+            <div class="middle-block">
+                <p class="price">Free</p>
+            </div>
+            <ul class="features">
+                <li>Доступ до обмеженних рецептів</li>
+                <li>Обмежений пошук без фільтрації</li>
+                <li>Зберігайте до 5 рецептів</li>
+            </ul>
+            <div class="bottom-block">Обрати план</div>
+        </div>
+        <!-- Pro plan -->
+        <div class="pricing-card pro-plan">
+            <div class="top-block">
+                <h3>Pro</h3>
+                <img src="./imagesandvideos/Pro-price64.png" alt="Pro Plan Logo">
+            </div>
+            <div class="middle-block">
+                <p class="price">$10/month</p>
+            </div>
+            <ul class="features">
+                <li>Широка кількість рецептів</li>
+                <li>Персоналізовані рекомендації</li>
+                <li>Зберігайте до 15 рецептів</li>
+            </ul>
+            <div class="bottom-block">Обрати план</div>
+        </div>
+        <!-- Premium plan -->
+        <div class="pricing-card premium-plan">
+            <div class="top-block">
+                <h3>Premium</h3>
+                <img src="./imagesandvideos/Premium-price64.png" alt="Premium Plan Logo">
+            </div>
+            <div class="middle-block">
+                <p class="price">$20/month</p>
+            </div>
+            <ul class="features">
+                <li>Повний доступ до рецептів</li>
+                <li>Ексклюзивний контент</li>
+                <li>Необмежене зберігання рецептів</li>
+            </ul>
+            <div class="bottom-block">Обрати план</div>
+        </div>
+    </section>
+
+<!-- Feedback -->
+    <div class="container">
+        <form class="form">
+            <h1>Є питання?</h1>
+            <p><h1>Ми готові допомогти!</h1></p>
+            <div class="data_block">
+                <input type="text" class="name" placeholder="Ім'я">
+                <input type="email" class="email" placeholder="E-mail">
+                <input type="tel" class="phone" placeholder="Телефон">
+            </div>
+            <div class="text_area">
+            <p class="message">Message</p>
+            <textarea rows="5" placeholder="Напишіть своє повідомлення..."></textarea>
+        </div>
+            <div class="send">
+                <input type="button" class="button" value="Submit"></input>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer-section">
+        <div class="footer-grid">
+            <!-- Про нас -->
+            <div class="about-us">
+                <h3>Про нас:</h3>
+                <p>Ми — команда кулінарних ентузіастів, які прагнуть зробити процес приготування їжі приємним і доступним для кожного.</p>
+                <p>Наш сайт допоможе вам знайти натхнення, вивчити нові рецепти та вдосконалити свої кулінарні навички.</p>
+            </div>
+    
+            <!-- Контакти та правова інформація внизу -->
+            <div class="footer-bottom">
+                <div class="contacts">
+                    <h3>Наші контакти</h3>
+                    <p>Телефон: +380 (00) 123-45-67</p>
+                    <p>Email: info@putandtaste.com</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="./imagesandvideos/Facebook.png" alt="Facebook" title="Facebook"></a>
+                        <a href="#"><img src="./imagesandvideos/Instagram.png" alt="Instagram" title="Instagram"></a>
+                        <a href="#"><img src="./imagesandvideos/X.png" alt="Twitter" title="Twitter"></a>
+                    </div>
+                </div>
+                <div class="legal-info">
+                    <p>© 2024 Put&Taste. Всі права захищені.</p>
+                    <p><a href="#">Політика конфіденційності</a> | <a href="#">Умови використання</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+
+</body>
+</html>
